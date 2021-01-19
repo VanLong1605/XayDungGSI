@@ -8,7 +8,7 @@ env:
   ROM_URL: https://jaist.dl.sourceforge.net/project/nusantaraproject/lavender/Nusantara_v1.1-lavender-15092020-OFFICIAL-0730.zip
   ROM_NAME: Generic
   BUILD_AB: true
-  BUILD_AONLY: false
+  BUILD_Aonly: false
   ROM_AONLY: ROM_A.7z
   ROM_AB: ROM_AB.7z
 
@@ -36,7 +36,7 @@ jobs:
             sudo -E apt-get -qq install git openjdk-8-jdk p7zip
        
        - name: Lấy Nguồn 
-         run: git clone --recurse-submodules https://github.com/HitaloSama/ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git
        
        - name: Thiết lập các yêu cầu 
          run: |
